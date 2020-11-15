@@ -6,6 +6,7 @@ My project focuses on these 2K ratings, predicts them based on player stats, and
 
 
 ![Steph 2K21](https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_640,h_358/https://fenixbazaar.com/wp-content/uploads/2020/08/nba-2k21-steph-curry-build-3.jpg)
+
 *A NBA 2K21 screehshot of Golden State Warriors star Stephen Curry*
 
 ## Rating Calculation
