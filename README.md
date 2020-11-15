@@ -18,5 +18,5 @@ I got total player statistics for the most recent 2019-2020 NBA season from [thi
 
 I webscraped 2K ratings data from HoopsHype.com. Below is a sample page that I webscraped from. 
 
-![Kevin Love HoopsHype 2k Ratings Page](https://hoopshype.com/player/kevin-love/2k/)
+![Kevin Love HoopsHype 2k Ratings Page](2k-ratings/k_love_screenshot.png)
 
