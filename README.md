@@ -18,7 +18,7 @@ I got total player statistics for the most recent 2019-2020 NBA season from [thi
 
 I webscraped 2K ratings data from HoopsHype.com. Below is a sample page that I webscraped from. 
 
-[Kevin Love HoopsHype 2k Ratings Page](images/k_love_screenshot.png)
+![Kevin Love HoopsHype 2k Ratings Page](images/k_love_screenshot.png)
 *I wanted to webscrape the 82 next to "Cleveland Cavaliers" since that is Kevin Love's most recent rating*
 
 ### Challenges
@@ -44,7 +44,7 @@ The graph showing actual vs predicted 2K ratings is below.
 
 ![results](graphs/results.png)
 
-## Feature Importance and Conclusion
+## Feature Importance
 
 Feature importance tells the user which features were most influencial in the model's prediction. The feature importance on my model showed that these were the most influencial statistics in a player's 2k rating. 
 
@@ -62,7 +62,11 @@ Free Throws Made | 0.049
 
 No surprised that Minutes Played and Points are at the top, since coaches tend to play their better players more minutes, and scoring is generally the most important statistic in basketball. 
 
-I was personally surprised that Steals was so high on the list. This may be attributed to a decreased NBA-wide emphasis being placed on defense. My interpretation is that since there aren't many defensive specialists in the league anymore, players that *are* defensive specialists and get lots of steals are rated high since that skill is in low supply and thus at a premium.
+I was personally surprised that Steals was so high on the list. This may be attributed to a decreased NBA-wide emphasis being placed on defense. 
+
+## Conclusion
+
+My interpretation of these results is that since there aren't many defensive specialists in the league anymore, players that *are* defensive specialists and get lots of steals are rated high since that skill is in low supply and thus at a premium.
 
 
 
