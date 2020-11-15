@@ -1,8 +1,12 @@
 # Predicting NBA 2K21 Ratings
 
-Every year, the basketball world waits at the ready for the latest installment of the NBA 2K video game series to release. NBA 2K video games simulate the action on the court with impeccable detail. The two main things basketball fanatics look for in the latest 2K video game are the cover athletes, and the **2K ratings, a numerical representation of a player's skill level on the court**.
+Every year, the basketball world waits at the ready for the latest installment of the NBA 2K video game series to release. NBA 2K video games simulate the action on the court with impeccable detail. The two main things basketball fanatics look for in the latest 2K video game are the [cover athletes](https://www.nba.com/news/nba-2k21-cover-athletes-lillard-zion), and the **2K ratings, a numerical representation of a player's skill level on the court**.
 
 My project focuses on these 2K ratings, predicts them based on player stats, and finds which statistical categoies most influence a players rating.
+
+
+![Steph 2K21](https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_640,h_358/https://fenixbazaar.com/wp-content/uploads/2020/08/nba-2k21-steph-curry-build-3.jpg)
+*A NBA 2K21 screehshot of Golden State Warriors star Stephen Curry*
 
 ## Rating Calculation
 
@@ -19,7 +23,7 @@ I got total player statistics for the most recent 2019-2020 NBA season from [thi
 I webscraped 2K ratings data from HoopsHype.com. Below is a sample page that I webscraped from. 
 
 ![Kevin Love HoopsHype 2k Ratings Page](images/k_love_screenshot.png)
-*I wanted to webscrape the 82 next to "Cleveland Cavaliers" since that is Kevin Love's most recent rating*
+*I wanted to webscrape the '82' next to "Cleveland Cavaliers" since that is Kevin Love's most recent rating*
 
 ### Challenges
 
@@ -38,7 +42,7 @@ My features were the player's total statistics, position, and team (both dummifi
 
 My target was the player's 2K rating. 
 
-I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7. This means the model had a 7 point error for any given 2K rating (ratings range from 68 to 99)
+I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7.5 . This means the model had an average error of 7.5 points for any given 2K rating (ratings range from 68 to 99)
 
 The graph showing actual vs predicted 2K ratings is below.
 
