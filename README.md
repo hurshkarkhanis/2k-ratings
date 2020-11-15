@@ -31,17 +31,40 @@ However, I did have to hardcode about 20 (out of 500+) NBA player's names (many 
 
 Definitely contact me at `karkhanis.hursh@gmail.com` if you know a way around this!
 
- 
 
- ## Prediction With Linear Regression
+## Prediction With Linear Regression
 
- My features were the player's total statistics, position, and team (both dummified). 
+My features were the player's total statistics, position, and team (both dummified). 
 
- My target was the player's 2K rating. 
+My target was the player's 2K rating. 
 
- I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7. This means the model had a 7 point error for any given 2K rating (ratings range from 68 to 99)
+I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7. This means the model had a 7 point error for any given 2K rating (ratings range from 68 to 99)
 
- The graph showing actual vs predicted 2K ratings is below.
+The graph showing actual vs predicted 2K ratings is below.
+
+![results](graphs/results.png)
+
+## Feature Importance and Conclusion
+
+Feature importance tells the user which features were most influencial in the model's prediction. The feature importance on my model showed that these were the most influencial statistics in a player's 2k rating. 
+
+Statistic | Importance (max score: 1)
+------------ | -------------
+Minutes Played | 0.726
+Points | 0.541
+Free Throws Attempted | 0.235
+Steals | 0.127
+Assists | 0.084
+Games Played  | 0.070
+Turnovers | 0.067
+Field Goals Attempted | 0.057
+Free Throws Made | 0.049
+
+No surprised that Minutes Played and Points are at the top, since coaches tend to play their better players more minutes, and scoring is generally the most important statistic in basketball. 
+
+I was personally surprised that Steals was so high on the list. This may be attributed to a decreased NBA-wide emphasis being placed on defense. My interpretation is that since there aren't many defensive specialists in the league anymore, players that *are* defensive specialists and get lots of steals are rated high since that skill is in low supply and thus at a premium.
+
+
 
 
 
