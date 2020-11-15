@@ -18,5 +18,35 @@ I got total player statistics for the most recent 2019-2020 NBA season from [thi
 
 I webscraped 2K ratings data from HoopsHype.com. Below is a sample page that I webscraped from. 
 
-[Kevin Love HoopsHype 2k Ratings Page](https://github.com/hurshkarkhanis/2k-ratings/blob/main/k_love_screenshot.png)
+[Kevin Love HoopsHype 2k Ratings Page](images/k_love_screenshot.png)
+*I wanted to webscrape the 82 next to "Cleveland Cavaliers" since that is Kevin Love's most recent rating*
+
+### Challenges
+
+A challenge I experienced in gathering data was web scraping. I originially wanted to scrape from the [offical 2K ratings website](https://www.2kratings.com/), but I wasn not able work with the `<span>` tags in the site's HTML. I used [HoopsHype.com](https://hoopshype.com/) because the HTML was easier to work with. 
+
+HoopsHype was rather unique in its construction of web links. Most of the time, the version of the players name that went into the link was just a lower cased and hyphenated version of their real name. (Example: Jimmy Butler went down as jimmy-butler)
+
+However, I did have to hardcode about 20 (out of 500+) NBA player's names (many of whose names contained initials like "J.J.", suffixes like "Jr" or "III"), since they didn't follow the usual convention. I took no pride in doing this, but could't not think of a way around it. 
+
+Definitely contact me at `karkhanis.hursh@gmail.com` if you know a way around this!
+
+ 
+
+ ## Prediction With Linear Regression
+
+ My features were the player's total statistics, position, and team (both dummified). 
+
+ My target was the player's 2K rating. 
+
+ I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7. This means the model had a 7 point error for any given 2K rating (ratings range from 68 to 99)
+
+ The graph showing actual vs predicted 2K ratings is below.
+
+
+
+
+
+
+
 
