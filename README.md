@@ -1,6 +1,6 @@
 # Predicting NBA 2K21 Ratings
 
-Every year, the basketball world waits at the ready for the latest installment of the NBA 2K video game series to release. NBA 2K video games simulate the action on the court with impeccable detail. The two main things basketball fanatics look for in the latest 2K video game are the [cover athletes](https://www.nba.com/news/nba-2k21-cover-athletes-lillard-zion), and the **2K ratings, a numerical representation of a player's skill level on the court**.
+Every year, the basketball world waits at the ready for the latest installment of the NBA 2K video game series to release. NBA 2K video games simulate the action on the court with impeccable detail, and fans play the game religiously. The two main things people look for in the latest 2K video game are the [cover athletes](https://www.nba.com/news/nba-2k21-cover-athletes-lillard-zion) and the **2K ratings, a numerical representation of a player's skill level on the court**.
 
 My project focuses on these 2K ratings, predicts them based on player stats, and finds which statistical categoies most influence a players rating.
 
@@ -11,7 +11,7 @@ My project focuses on these 2K ratings, predicts them based on player stats, and
 
 ## Rating Calculation
 
-As written in [this Complex article](https://www.complex.com/sports/2017/10/how-nba-2k-determines-player-rankings), "every year, these ratings are held up to scrutiny—sometimes by the fans and critics, but most often by the players themselves." Every player believes he is worth higher than the number 2K assigns them.
+As written in [this Complex article](https://www.complex.com/sports/2017/10/how-nba-2k-determines-player-rankings), "every year, these ratings are held up to scrutiny—sometimes by the fans and critics, but most often by the players themselves." Every player believes he is worth higher than the number 2K assigns them, and every year, [friendly trash talk enuses](https://www.si.com/nba/2017/08/04/john-wall-twitter-fight-ronnie-nba-2k-rating-salt) between players and Ronnie Singh, the digital marketing director at 2K sports, when players playfully roast Singh for giving them a lower than desired rating.
 
 Caltulating ratings is a long, complicated, and exhausting process, but generally speaking, a player's overall 2K rating is an aggregation of their ratings in certain cetagories like defending, rebounding, inside/outside scoring (among others), in addition to their archetype. For example [versatile point guard Chris Paul's](https://www.2kratings.com/chris-paul) archetype is 'All-Around 2-Way', while the [highly specialized J.J. Redick's](https://www.2kratings.com/jj-redick) archetype is "Sharpshooter".
 
@@ -39,11 +39,13 @@ Definitely contact me at `karkhanis.hursh@gmail.com` if you know a way around th
 
 ## Prediction With Linear Regression
 
-My features were the player's total statistics, position, and team (both dummified). 
+My features were the player's total statistics, position, and team (I dummified the latter two). 
 
 My target was the player's 2K rating. 
 
-I split my data into 80% train and 20% test and ran Linear Regression to get a very low root mean squared error of about 7.5 . This means the model had an average error of 7.5 points for any given 2K rating (ratings range from 68 to 99)
+I trained my model on 80% of the data and tested on the other 20% using a train-test-split. I ran Linear Regression to get a very low root mean squared error of about 7.5 . 
+
+This means the model had an average error of 7.5 points for any given 2K rating (ratings range from 68 to 99)
 
 The graph showing actual vs predicted 2K ratings is below.
 
@@ -67,11 +69,11 @@ Free Throws Made | 0.049
 
 No surprised that Minutes Played and Points are at the top, since coaches tend to play their better players more minutes, and scoring is generally the most important statistic in basketball. 
 
-I was personally surprised that Steals was so high on the list. This may be attributed to a decreased NBA-wide emphasis being placed on defense. 
+I was personally surprised that Steals was so high on the list. This may be attributed to a decreased emphasis being placed on defense throughout the NBA for the last several years.
 
 ## Conclusion
 
-My interpretation of these results is that since there aren't many defensive specialists in the league anymore, players that *are* defensive specialists and get lots of steals are rated high since that skill is in low supply and thus at a premium.
+My interpretation of these results is that since there aren't many defensive specialists in the league anymore, players that *are* defensive specialists and get lots of steals are rated with that in mind since that skill is in low supply and thus, at a premium.
 
 
 
